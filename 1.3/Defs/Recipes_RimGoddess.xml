@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>RTN_Recipe_InfinityFabric</defName>
+    <label>make infinity fabric</label>
+    <description>Infuses devilstrand with faith.</description>
+    <jobString>Making infinity fabric.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <workAmount>1000</workAmount>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <targetCountAdjustment>70</targetCountAdjustment>
+    <researchPrerequisite>RTN_ResearchProject_FaithInfusion</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DevilstrandCloth</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RTN_Thing_FaithCrystal</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DevilstrandCloth</li>
+        <li>RTN_Thing_FaithCrystal</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <RTN_Thing_InfinityFabric>70</RTN_Thing_InfinityFabric>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+</Defs>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RimGoddess.Equipment.TransformThingDef>
+    <defName>RTN_TransformThing_Rifle</defName>
+    <normalFormDef>RTN_Thing_Rifle</normalFormDef>
+    <transformedFormDef>RTN_Thing_DivineFinger</transformedFormDef>
+    <goddessAbilityDef>RTN_GoddessAbility_DivineStrike</goddessAbilityDef>
+    <nonRaceCostList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </nonRaceCostList>
+  </RimGoddess.Equipment.TransformThingDef>
+  <RimGoddess.Equipment.TransformThingDef>
+    <defName>RTN_TransformThing_Waraxe</defName>
+    <normalFormDef>RTN_Thing_Waraxe</normalFormDef>
+    <transformedFormDef>RTN_Thing_Hammerfall</transformedFormDef>
+    <goddessAbilityDef>RTN_GoddessAbility_Blink</goddessAbilityDef>
+    <nonRaceCostList>
+      <Steel>75</Steel>
+      <WoodLog>25</WoodLog>
+    </nonRaceCostList>
+  </RimGoddess.Equipment.TransformThingDef>
+  <RimGoddess.Equipment.TransformThingDef>
+    <defName>RTN_TransformThing_Quaterstaff</defName>
+    <normalFormDef>RTN_Thing_Quaterstaff</normalFormDef>
+    <transformedFormDef>RTN_Thing_ScepterOfWaters</transformedFormDef>
+    <goddessAbilityDef>RTN_GoddessAbility_HealingWaters</goddessAbilityDef>
+    <nonRaceCostList>
+      <Steel>25</Steel>
+      <WoodLog>75</WoodLog>
+    </nonRaceCostList>
+  </RimGoddess.Equipment.TransformThingDef>
+</Defs>

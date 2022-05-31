@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>[Experimental]RimGoddess - Equipment</name>
+  <author>Blade of Debt</author>
+  <supportedVersions>
+    <li>1.1</li>
+    <li>1.2</li>
+  </supportedVersions>
+  <packageId>BladeOfDebt.RimGoddess.EquipmentEx</packageId>
+  <description>Equipment extension mod that add addition items to the RimGodess - Race mod. These items give the Godess new abilities in addition to transform to suit their new form.</description>
+</ModMetaData>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="OrbitalStrikeBase">
+    <defName>RTN_Thing_DivineStrike</defName>
+    <label>divine strike</label>
+    <thingClass>RimGoddess.Equipment.DivineStrike</thingClass>
+    <comps>
+      <li Class="CompProperties_OrbitalBeam">
+        <width>0.5</width>
+        <color>(77, 77, 255, 242)</color>
+        <sound>OrbitalBeamSubtle</sound>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

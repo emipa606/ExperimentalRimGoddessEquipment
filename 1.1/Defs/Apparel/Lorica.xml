@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="RTN_ThingBase_ApparelMakeable">
+    <defName>RTN_Thing_Chlamys</defName>
+    <label>chlamys</label>
+    <description>An ancient piece of clothing that is worn over other clothes.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Chlamys/Chlamys</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>150</Cloth>
+      <DevilstrandCloth>75</DevilstrandCloth>
+      <RTN_Thing_FaithCrystal>1</RTN_Thing_FaithCrystal>
+    </costList>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>0.5</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.37</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.32</ArmorRating_Heat>
+      <Insulation_Cold>1</Insulation_Cold>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <defaultOutfitTags>
+        <li>RimGoddessRoman</li>
+      </defaultOutfitTags>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+        <li>Torso</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Chlamys/Chlamys</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+  <ThingDef ParentName="RTN_ThingBase_Apparel">
+    <defName>RTN_Thing_Lorica</defName>
+    <label>lorica</label>
+    <description>A piece of armour that protects the user from damage. It has been transformed by a Goddess to be more powerful and provide enhanced abilities.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Lorica/Lorica</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>0.5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.47</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.42</ArmorRating_Heat>
+      <Insulation_Cold>1</Insulation_Cold>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <defaultOutfitTags>
+        <li>RimGoddessRoman</li>
+      </defaultOutfitTags>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+        <li>Torso</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Lorica/Lorica</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+</Defs>

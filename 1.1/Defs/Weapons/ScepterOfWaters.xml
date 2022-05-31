@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="RTN_ThingBase_MakeableMeleeWeapon">
+    <defName>RTN_Thing_Quaterstaff</defName>
+    <label>Quaterstaff</label>
+    <description>A balanced weapon that is favoured by those that are more nomadic in nature. It provide basic protection through it's blunt attacks.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/Quaterstaff</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>1.25</Mass>
+    </statBases>
+    <costList>
+      <WoodLog>50</WoodLog>
+      <Steel>25</Steel>
+      <Plasteel>50</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+      <RTN_Thing_FaithCrystal>1</RTN_Thing_FaithCrystal>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>top head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>bottom head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="RTN_ThingBase_Gun">
+    <defName>RTN_Thing_ScepterOfWaters</defName>
+    <label>Scepter of Waters</label>
+    <description>The divine power of the quaterstaff has been drawn out to allow it to fill a more supportive role. It feeds it's power into the Goddess to allow her to use abilites that would not be normally possible.</description>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/ScepterofWaters</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+    <statBases>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>RTN_Thing_ScepterOfWatersProjectile</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <range>30</range>
+        <soundCast>InfernoCannon_Fire</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>RTN_Thing_ScepterOfWatersProjectile</defName>
+    <label>Scepter of Waters Projectile</label>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <speed>15</speed>
+    </projectile>
+    <graphicData>
+      <texPath>Things/Projectile/Needle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+</Defs>

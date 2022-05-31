@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RimGoddess.Equipment.Definition.TransformThingDef>
+    <defName>RTN_TransformThing_Stola</defName>
+    <normalFormDef>RTN_Thing_Stola</normalFormDef>
+    <transformedFormDef>RTN_Thing_Tunica</transformedFormDef>
+    <goddessAbilityDefName>RTN_GoddessAbility_DivineShield</goddessAbilityDefName>
+    <nonRaceCostList>
+      <Cloth>60</Cloth>
+    </nonRaceCostList>
+  </RimGoddess.Equipment.Definition.TransformThingDef>
+  <RimGoddess.Equipment.Definition.TransformThingDef>
+    <defName>RTN_TransformThing_Chlamys</defName>
+    <normalFormDef>RTN_Thing_Chlamys</normalFormDef>
+    <transformedFormDef>RTN_Thing_Lorica</transformedFormDef>
+    <goddessAbilityDefName>RTN_GoddessAbility_Sanctuary</goddessAbilityDefName>
+    <nonRaceCostList>
+      <Cloth>80</Cloth>
+    </nonRaceCostList>
+  </RimGoddess.Equipment.Definition.TransformThingDef>
+</Defs>

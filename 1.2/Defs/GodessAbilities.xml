@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RimGoddess.Race.GoddessAbilityDef Name="RTN_GoddessAbilityBase_BaseAbility" Abstract="True">
+    <statBases>
+      <Ability_Duration>0</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>RimGoddess.Base.Verb_CastGoddessAbility</verbClass>
+      <range>25</range>
+      <requireLineOfSight>True</requireLineOfSight>
+      <warmupTime>1</warmupTime>
+      <targetParams>
+        <canTargetBuildings>False</canTargetBuildings>
+        <canTargetAnimals>False</canTargetAnimals>
+        <thingCategory>Item</thingCategory>
+        <mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+      </targetParams>
+    </verbProperties>
+  </RimGoddess.Race.GoddessAbilityDef>
+  <RimGoddess.Race.GoddessAbilityDef Parent="RTN_GoddessAbilityBase_BaseAbility">
+    <abilityClass>RimGoddess.Equipment.DivineStrikeAbility</abilityClass>
+    <defName>RTN_GoddessAbility_DivineStrike</defName>
+    <label>Divine Strike</label>
+    <iconPath>UI/Commands/DesirePower</iconPath>
+    <description>Calls down a strike from the heavens to decimate all oposition.</description>
+    <hotKey>Misc1</hotKey>
+    <statBases>
+      <RTN_Stat_FaithCost>80</RTN_Stat_FaithCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>5</warmupTime>
+      <range>40</range>
+      <targetParams>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+  </RimGoddess.Race.GoddessAbilityDef>
+  <RimGoddess.Race.GoddessAbilityDef Parent="RTN_GoddessAbilityBase_BaseAbility">
+    <abilityClass>RimGoddess.Equipment.HealingWatersAbility</abilityClass>
+    <defName>RTN_GoddessAbility_HealingWaters</defName>
+    <label>Healing Waters</label>
+    <iconPath>UI/Commands/AsMedical</iconPath>
+    <description>Heals all matter of ailments on the target pawn with restoritive waters. This is incapable of fixing that which is lost.</description>
+    <hotKey>Misc2</hotKey>
+    <statBases>
+      <RTN_Stat_FaithCost>75</RTN_Stat_FaithCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>3</warmupTime>
+      <range>10</range>
+      <targetParams>
+        <canTargetAnimals>True</canTargetAnimals>
+      </targetParams>
+    </verbProperties>
+  </RimGoddess.Race.GoddessAbilityDef>
+  <RimGoddess.Race.GoddessAbilityDef Parent="RTN_GoddessAbilityBase_BaseAbility">
+    <abilityClass>RimGoddess.Equipment.BlinkAbility</abilityClass>
+    <defName>RTN_GoddessAbility_Blink</defName>
+    <label>Blink</label>
+    <iconPath>UI/Misc/Flash</iconPath>
+    <description>Teleports the caster to a nearby target.</description>
+    <hotKey>Misc2</hotKey>
+    <statBases>
+      <RTN_Stat_FaithCost>20</RTN_Stat_FaithCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>1</warmupTime>
+      <range>25</range>
+      <targetParams>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+  </RimGoddess.Race.GoddessAbilityDef>
+  <RimGoddess.Race.GoddessAbilityDef Parent="RTN_GoddessAbilityBase_BaseAbility">
+    <abilityClass>RimGoddess.Equipment.DivineShieldAbility</abilityClass>
+    <defName>RTN_GoddessAbility_DivineShield</defName>
+    <label>Divine Shield</label>
+    <iconPath>Other/ShieldBubble</iconPath>
+    <description>Creates a shield around the target preventing damage.</description>
+    <hotKey>Misc3</hotKey>
+    <requiresTarget>False</requiresTarget>
+    <statBases>
+      <RTN_Stat_FaithCost>30</RTN_Stat_FaithCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>0</warmupTime>
+      <range>25</range>
+      <targetParams>
+        <canTargetPawns>True</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+  </RimGoddess.Race.GoddessAbilityDef>
+  <RimGoddess.Race.GoddessAbilityDef Parent="RTN_GoddessAbilityBase_BaseAbility">
+    <defName>RTN_GoddessAbility_Sanctuary</defName>
+    <abilityClass>RimGoddess.Equipment.SanctuaryAbility</abilityClass>
+    <label>Sanctuary</label>
+    <iconPath>Other/ShieldBubble</iconPath>
+    <description>Creates a shield around the target area.</description>
+    <hotKey>Misc4</hotKey>
+    <statBases>
+      <RTN_Stat_FaithCost>55</RTN_Stat_FaithCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>3</warmupTime>
+      <range>15</range>
+      <targetParams>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+  </RimGoddess.Race.GoddessAbilityDef>
+</Defs>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="RTN_ThingBase_MakeableGun" ParentName="BaseHumanMakeableGun" Abstract="True">
+    <thingClass>RimGoddess.Equipment.TransformThing</thingClass>
+    <techLevel>Ultra</techLevel>
+    <smeltable>false</smeltable>
+    <recipeMaker>
+      <researchPrerequisite>RTN_ResearchProject_WeaponCrafting</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tradeability>Sellable</tradeability>
+    <weaponTags>
+      <li>RimGoddessRanged</li>
+    </weaponTags>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef Name="RTN_ThingBase_Gun" ParentName="BaseGunWithQuality" Abstract="True">
+    <thingClass>RimGoddess.Equipment.TransformThing</thingClass>
+    <techLevel>Ultra</techLevel>
+    <smeltable>false</smeltable>
+    <tradeability>Sellable</tradeability>
+    <weaponTags>
+      <li>RimGoddessRanged</li>
+    </weaponTags>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef Name="RTN_ThingBase_MeleeWeapon" ParentName="BaseWeapon" Abstract="True">
+    <thingClass>RimGoddess.Equipment.TransformThing</thingClass>
+    <techLevel>Ultra</techLevel>
+    <smeltable>false</smeltable>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+    <weaponTags>
+      <li>RimGoddessMelee</li>
+    </weaponTags>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef Name="RTN_ThingBase_MakeableMeleeWeapon" ParentName="RTN_ThingBase_MeleeWeapon" Abstract="True">
+    <recipeMaker>
+      <researchPrerequisite>RTN_ResearchProject_WeaponCrafting</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

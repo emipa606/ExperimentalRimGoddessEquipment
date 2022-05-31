@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef Name="RTN_ResearchProjectBase_RimGoddess" Abstract="True">
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <techLevel>Ultra</techLevel>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>RTN_ResearchTab_RimGoddess</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="RTN_ResearchProjectBase_RimGoddess">
+    <defName>RTN_ResearchProject_FaithInfusion</defName>
+    <label>Faith Infusion</label>
+    <description>Allows the infusion of faith into metals and textiles to create new elements.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>1</researchViewX>
+    <researchViewY>0.5</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="RTN_ResearchProjectBase_RimGoddess">
+    <defName>RTN_ResearchProject_WeaponCrafting</defName>
+    <label>Weapon Crafting</label>
+    <description>Allows the crafting of advanced weapons from faith crystals.</description>
+    <baseCost>2500</baseCost>
+    <prerequisites>
+      <li>PrecisionRifling</li>
+      <li>RTN_ResearchProject_FaithInfusion</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="RTN_ResearchProjectBase_RimGoddess">
+    <defName>RTN_ResearchProject_ApparelCrafting</defName>
+    <label>Apparel Crafting</label>
+    <description>Allows the crafting of apparel from faith crystals.</description>
+    <baseCost>2500</baseCost>
+    <prerequisites>
+      <li>ComplexClothing</li>
+      <li>RTN_ResearchProject_FaithInfusion</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+</Defs>
