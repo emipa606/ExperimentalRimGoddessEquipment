@@ -16,8 +16,6 @@
     </PackageReference>
     <Reference Include="RimGoddess.Base">
       <HintPath>..\..\..\ExperimentalRimGoddessRace\1.4\Assemblies\RimGoddess.Base.dll</HintPath>
-	    <CopyLocal>False</CopyLocal>
-	    <Private>false</Private>
     </Reference>
   </ItemGroup>
 </Project>

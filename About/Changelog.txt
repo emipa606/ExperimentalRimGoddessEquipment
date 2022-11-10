@@ -1,5 +1,8 @@
 # Changelog for ExperimentalRimGoddessEquipment
 
+1.4.2 - Missed the updated assembly
+
+
 1.4.1 - Mod updated for 1.4 and passed autotests - 52 mods left to update of 732
 
 
