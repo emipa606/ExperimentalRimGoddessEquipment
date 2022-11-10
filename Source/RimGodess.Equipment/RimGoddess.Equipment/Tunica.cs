@@ -23,15 +23,14 @@ public class Tunica : TransformApparel
     public override void Tick()
     {
         base.Tick();
-        if (TimePassed >= 20f)
+        switch (TimePassed)
         {
-            Charge = 0f;
-            return;
-        }
-
-        if (TimePassed <= 1.5f)
-        {
-            Charge = Mathf.Min(Charge + 1.388889f, 125f);
+            case >= 20f:
+                Charge = 0f;
+                return;
+            case <= 1.5f:
+                Charge = Mathf.Min(Charge + 1.388889f, 125f);
+                break;
         }
 
         TimePassed += 1f / 60f;

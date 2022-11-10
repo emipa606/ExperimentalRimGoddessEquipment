@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RimGoddess.Equipment.Definition.TetherThingDef>
+    <defName>RTN_TetherThing_SentinelArmour</defName>
+    <tetherThing>RTN_Thing_SentinelArmour</tetherThing>
+    <tetheredThing>RTN_Thing_SentinelArmourTethered</tetheredThing>
+    <tetherFaithDraw>0.1</tetherFaithDraw>
+    <nonRaceCostList>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>80</Plasteel>
+      <Uranium>20</Uranium>
+    </nonRaceCostList>
+  </RimGoddess.Equipment.Definition.TetherThingDef>
+</Defs>

@@ -190,11 +190,6 @@ public class HealingWatersAbility : GoddessAbility
         }
 
         var hediff_Injury3 = FindInjury(currentTargetPawn);
-        if (hediff_Injury3 != null)
-        {
-            return Cure(hediff_Injury3);
-        }
-
-        return false;
+        return hediff_Injury3 != null && Cure(hediff_Injury3);
     }
 }

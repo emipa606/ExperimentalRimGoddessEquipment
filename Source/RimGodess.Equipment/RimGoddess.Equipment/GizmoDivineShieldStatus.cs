@@ -13,7 +13,7 @@ public class GizmoDivineShieldStatus : Gizmo
 
     public GizmoDivineShieldStatus()
     {
-        order = -120f;
+        base.Order = -120f;
     }
 
     public Tunica Tunica { get; set; }
@@ -40,7 +40,7 @@ public class GizmoDivineShieldStatus : Gizmo
         Widgets.FillableBar(rect4, fillPercent, FullShieldBarTex, EmptyShieldBarTex, false);
         Text.Font = GameFont.Small;
         Text.Anchor = TextAnchor.MiddleCenter;
-        Widgets.Label(rect4, charge + " / " + 125f);
+        Widgets.Label(rect4, $"{charge} / {125f}");
         Text.Anchor = TextAnchor.UpperLeft;
         return new GizmoResult(GizmoState.Clear);
     }

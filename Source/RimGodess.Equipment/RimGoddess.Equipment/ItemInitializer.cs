@@ -82,7 +82,7 @@ public static class ItemInitializer
     private static void SetCostList(ThingDef a_thing, List<ThingDefCountClass> a_costList)
     {
         a_thing.costList = a_costList;
-        var named = DefDatabase<RecipeDef>.GetNamed("Make_" + a_thing.defName);
+        var named = DefDatabase<RecipeDef>.GetNamed($"Make_{a_thing.defName}");
         if (named == null)
         {
             return;

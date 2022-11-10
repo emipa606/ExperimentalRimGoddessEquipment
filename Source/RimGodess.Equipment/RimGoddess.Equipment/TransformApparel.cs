@@ -43,7 +43,7 @@ public class TransformApparel : Apparel, ITransformable
             }
 
             var path = def.apparel.LastLayer != ApparelLayerDefOf.Overhead
-                ? def.apparel.wornGraphicPath + "_" + a_pawn.story.bodyType.defName
+                ? $"{def.apparel.wornGraphicPath}_{a_pawn.story.bodyType.defName}"
                 : def.apparel.wornGraphicPath;
             value.graphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderDatabase.CutoutComplex,
                 def.graphicData.drawSize, DrawColor, DrawColorTwo);

@@ -16,7 +16,8 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2114625759
 **Warning this is an experimental mod things are subject to change and not guaranteed to be stable.**
 
 **This is an extension to RimGoddess - Race however this can be used independently.**
-https://steamcommunity.com/sharedfiles/filedetails/?id=2114625254
+[strike]https://steamcommunity.com/sharedfiles/filedetails/?id=2114625254[/strike]
+https://steamcommunity.com/sharedfiles/filedetails/?id=2815297693
 
 Note that use of alternate forms and abilities requires a Goddess from RimGoddess - Race.
 

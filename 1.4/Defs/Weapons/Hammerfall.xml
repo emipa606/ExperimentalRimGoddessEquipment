@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="RTN_ThingBase_MakeableMeleeWeapon">
+    <defName>RTN_Thing_Waraxe</defName>
+    <label>waraxe</label>
+    <description>A weapon based off of it's tool counterpart. It is refined to be more suited for combat.</description>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/Waraxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>1.25</Mass>
+    </statBases>
+    <costList>
+      <RTN_Thing_Eternium>80</RTN_Thing_Eternium>
+      <ComponentSpacer>2</ComponentSpacer>
+      <RTN_Thing_FaithCrystal>1</RTN_Thing_FaithCrystal>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>poke</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="RTN_ThingBase_MeleeWeapon">
+    <defName>RTN_Thing_Hammerfall</defName>
+    <label>hammerfall</label>
+    <description>The divine form of the Waraxe it is transformed to allow for powerfull blunt attacks. It feeds it power back into the Goddess to allow extra abilities.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/Hammerfall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>1.25</Mass>
+    </statBases>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>
