@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TabulaRasa.UpdateDef Abstract="true" Name="ExperimentalRimGoddessEquipment_UpdateInfoBase">
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2815298155</linkUrl>
+		<banner>UpdateInfo/ExperimentalRimGoddessEquipment</banner>
+	</TabulaRasa.UpdateDef>
+	<TabulaRasa.UpdateDef ParentName="ExperimentalRimGoddessEquipment_UpdateInfoBase">
+		<defName>ExperimentalRimGoddessEquipment_1_4_2</defName>
+		<date>2025/6/7</date>
+		<content>This mod will not be further updated.</content>
+	</TabulaRasa.UpdateDef>
+</Defs>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HugsLib.UpdateFeatureDef Abstract="true" Name="ExperimentalRimGoddessEquipment_UpdateFeatureBase">
+		<modNameReadable>ExperimentalRimGoddessEquipment</modNameReadable>
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2815298155</linkUrl>
+	</HugsLib.UpdateFeatureDef>
+	<HugsLib.UpdateFeatureDef ParentName="ExperimentalRimGoddessEquipment_UpdateFeatureBase">
+		<defName>ExperimentalRimGoddessEquipment_1_4_2</defName>
+		<assemblyVersion>1.4.2</assemblyVersion>
+		<content>This mod will not be further updated.</content>
+	</HugsLib.UpdateFeatureDef>
+</Defs>
+
